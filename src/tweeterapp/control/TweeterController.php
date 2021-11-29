@@ -39,7 +39,7 @@ class TweeterController extends AbstractController {
 
         $tweets = \tweeterapp\model\Tweet::all();
         $vue = new \tweeterapp\view\TweeterView($tweets);
-        echo $v->renderHome();
+        echo $vue->renderHome();
 
         /* Algorithme :
          *  1 Récupérer tout les tweet en utilisant le modèle Tweet
